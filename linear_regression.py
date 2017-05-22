@@ -178,13 +178,13 @@ class dataset(object):
             m = self.slope
             c = self.intercept
             name = 'Best Fit Line'
-            equation = self.ylabel + " = " + str(round(m, 3)) + '$\\cdot$' + self.xlabel + ' + ' + str(
+            equation = self.ylabel + " = " + str(round(m, 3)) + self.xlabel + ' + ' + str(
                 round(c, 3))
         else:
-            m = self.slope_00
+            m = self.slope00
             c = 0.0
             name = 'Best Fit Line Through Origin'
-            equation = self.ylabel + " = " + str(round(m, 3)) + '$\\cdot$' + self.xlabel
+            equation = self.ylabel + " = " + str(round(m, 3))  + self.xlabel
 
         xlabel, ylabel = self.get_variable_labels()
 
